@@ -21,4 +21,6 @@ Gem::Specification.new do |s|
     s.add_development_dependency('rake')
     s.add_development_dependency('aruba')
     s.add_development_dependency('rspec', '~> 3.0.0.beta2')
+    s.add_development_dependency('guard')
+    s.add_development_dependency('guard-rspec')
 end
