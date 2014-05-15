@@ -23,3 +23,13 @@ You'll need to `gem install bundler` after getting ruby 2.1.2 installed. Easiest
 After installing bundler, you need to `bundle install`. This will install the gems we need.
 
 That's all!
+
+
+#Reminders for me
+Demoing Guard:
+
+* `guard_0` .. `3`
+
+Demoing Cucumber:
+
+* `pre_cucumber`
