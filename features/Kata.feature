@@ -25,15 +25,14 @@ Feature: Feed candy to elephants
   1 ≤ A[K] ≤ 10000, for K = 1, 2, ..., N
 
   Scenario: Kata Example
-    Given I have started the application
-    When I tell the application I'm going to give it "2" inputs
-    And I tell the application those inputs:
-      | Lines |
-      | 2 3   |
-      | 1 1   |
-      | 3 7   |
-      | 4 2 2 |
-    Then the output should be:
-      | Lines |
-      | Yes   |
-      | No    |
+    When I run `lecandy` interactively
+    And I type "2"
+    And I type "2 3"
+    And I type "1 1"
+    And I type "3 7"
+    And I type "4 2 2"
+    Then the output should contain:
+    """
+    Yes
+    No
+    """

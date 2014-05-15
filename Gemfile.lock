@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    lecandy (1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -35,6 +40,6 @@ PLATFORMS
 
 DEPENDENCIES
   aruba
-  cucumber
+  lecandy!
   rake
   rspec
