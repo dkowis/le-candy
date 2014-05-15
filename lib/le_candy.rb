@@ -5,13 +5,13 @@ class LeCandy
     # doing this should make aruba testing our app a bit faster, and doesn't really affect the design of the app
 
     def initialize(argv, stdin=STDIN, stdout=STDOUT, stderr=STDERR, kernel=Kernel)
-        puts "Initializing"
         @argv, @stdin, @stdout, @stderr, @kernel = argv, stdin, stdout, stderr, kernel
     end
 
     def execute!
-        # your code here, assign a value to exitstatus
-        puts 'HELLO WORLD'
+        # an example as to how to get the input from the STDIN
+        input_count = gets
+
         exitstatus = 1
         @kernel.exit(exitstatus)
     end
